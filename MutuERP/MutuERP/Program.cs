@@ -9,7 +9,7 @@ namespace MutuERP
 {
     static class Program
     {
-        public static FrameMain mainFrame;
+        //public static FrameMain mainFrame;
         public static MainForm mainForm;
         public static UserBean loginUser;
         

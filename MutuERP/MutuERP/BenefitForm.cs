@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraGrid.Views.Grid;
+﻿using Communal;
+using DevExpress.XtraGrid.Views.Grid;
 using MutuDAL;
 using MutuModels;
 using System;
@@ -113,7 +114,10 @@ namespace MutuERP
             b.BaseSalary = salary;
 
             BenefitDAO d = new BenefitDAO();
-            d.AddBenefit(b);
+            if (ReturnStatus.OK == d.AddBenefit(b))
+            {
+                MessageBox.Show("添加成功", "信息提示", MessageBoxButtons.OK);
+            }
 
             LoadData();
         }

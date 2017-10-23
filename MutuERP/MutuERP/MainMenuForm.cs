@@ -25,22 +25,22 @@ namespace MutuERP
 
         private void buttonEnroll_Click(object sender, EventArgs e)
         {
-            Program.mainFrame.LoadFrame_Enroll();
+            //Program.mainFrame.LoadFrame_Enroll();
         }
 
         private void buttonLesson_Click(object sender, EventArgs e)
         {
-            Program.mainFrame.LoadFrame_Lesson();
+            //Program.mainFrame.LoadFrame_Lesson();
         }
 
         private void buttonPolicy_Click(object sender, EventArgs e)
         {
-            Program.mainFrame.LoadFrame_Policy();
+            //Program.mainFrame.LoadFrame_Policy();
         }
 
         private void buttonSetup_Click(object sender, EventArgs e)
         {
-            Program.mainFrame.LoadFrame_Setup();
+            //Program.mainFrame.LoadFrame_Setup();
         }
     }
 }

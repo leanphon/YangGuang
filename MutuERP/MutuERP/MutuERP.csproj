@@ -188,12 +188,6 @@
     <Compile Include="LessonInputForm.Designer.cs">
       <DependentUpon>LessonInputForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrameMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrameMain.Designer.cs">
-      <DependentUpon>FrameMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -307,9 +301,6 @@
     <EmbeddedResource Include="LessonInputForm.resx">
       <DependentUpon>LessonInputForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrameMain.resx">
-      <DependentUpon>FrameMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -356,6 +347,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Communal\Communal.csproj">
+      <Project>{CCFC816A-D243-43E6-A63A-82B0F5473165}</Project>
+      <Name>Communal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MutuDAL\MutuDAL.csproj">
       <Project>{d732e05f-11ab-4b77-9445-effe2b2256bc}</Project>
       <Name>MutuDAL</Name>

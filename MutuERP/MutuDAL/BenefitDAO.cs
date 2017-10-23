@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using Communal;
 
 namespace MutuDAL
 {
@@ -11,7 +12,7 @@ namespace MutuDAL
         DataSet ds;
         private SqlParameter para; //参数
 
-        public int AddBenefit(BenefitBean b)
+        public ReturnStatus AddBenefit(BenefitBean b)
         {
             int count = 0;
             try
@@ -24,12 +25,12 @@ namespace MutuDAL
             }
             catch (Exception ex)
             {
-                return (int)ErrorMessage.ErrorCode.ERROR_DB_ADD_FAIL;
+                return ReturnStatus.ERROR_DB_ADD_FAIL;
             }
-            return count;
+            return ReturnStatus.OK;
         }
 
-        public int UpdateBenefit(BenefitBean b)
+        public ReturnStatus UpdateBenefit(BenefitBean b)
         {
             int count = 0;
             try
@@ -43,13 +44,13 @@ namespace MutuDAL
             }
             catch (Exception ex)
             {
-                return (int)ErrorMessage.ErrorCode.ERROR_DB_UPDATE_FAIL;
+                return ReturnStatus.ERROR_DB_UPDATE_FAIL;
             }
 
-            return count;
+            return ReturnStatus.OK;
         }
 
-        public int DeleteBenefit(BenefitBean b)
+        public ReturnStatus DeleteBenefit(BenefitBean b)
         {
             int count = 0;
             try
@@ -61,10 +62,10 @@ namespace MutuDAL
             }
             catch (Exception ex)
             {
-                return (int)ErrorMessage.ErrorCode.ERROR_DB_UPDATE_FAIL;
+                return ReturnStatus.ERROR_DB_DELETE_FAIL;
             }
 
-            return count;
+            return ReturnStatus.OK;
         }
 
         public DataSet GetAllBenefit()

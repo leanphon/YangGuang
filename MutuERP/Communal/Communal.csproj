@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D732E05F-11AB-4B77-9445-EFFE2B2256BC}</ProjectGuid>
+    <ProjectGuid>{CCFC816A-D243-43E6-A63A-82B0F5473165}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MutuDAL</RootNamespace>
-    <AssemblyName>MutuDAL</AssemblyName>
+    <RootNamespace>Communal</RootNamespace>
+    <AssemblyName>Communal</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,31 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BenefitDAO.cs" />
-    <Compile Include="DBHelper.cs" />
-    <Compile Include="ItemConsumeDAO.cs" />
-    <Compile Include="ItemReserveDAO.cs" />
-    <Compile Include="CustomerDAO.cs" />
-    <Compile Include="OrderDAO.cs" />
-    <Compile Include="LessonDAO.cs" />
-    <Compile Include="PerformanceDAO.cs" />
-    <Compile Include="DepartmentDAO.cs" />
-    <Compile Include="LogItemDAO.cs" />
-    <Compile Include="SalaryBillDAO.cs" />
-    <Compile Include="TeacherDAO.cs" />
-    <Compile Include="StaffDAO.cs" />
-    <Compile Include="PostDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Communal\Communal.csproj">
-      <Project>{ccfc816a-d243-43e6-a63a-82b0f5473165}</Project>
-      <Name>Communal</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MutuModels\MutuModels.csproj">
-      <Project>{36ee07da-d812-4699-9e5b-a7333ea88c8f}</Project>
-      <Name>MutuModels</Name>
-    </ProjectReference>
+    <Compile Include="ReturnStatus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
