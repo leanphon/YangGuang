@@ -285,7 +285,6 @@ create table StaffList(
  BenefitId int,
  AttendanceSalary int,
  SenioritySalary int,
-
 );
 
 

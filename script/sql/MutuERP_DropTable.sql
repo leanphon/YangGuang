@@ -1,5 +1,5 @@
+----- 角色表
 drop table RoleList         
-
 ----- 岗位层级表         
 drop table PostList
 ----- 绩效层级表

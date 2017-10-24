@@ -75,6 +75,7 @@ create table StaffList(
  SenioritySalary int,
 );
 
+----- 教师表
 create table TeacherList(
  Id int primary key ,
  Remark varchar(100) 
@@ -98,8 +99,6 @@ create table SalaryBill(
  InputDate varchar(20),
  InputStaffNumber varchar(30)
 );
-
-
 
 
 ----- 客户表

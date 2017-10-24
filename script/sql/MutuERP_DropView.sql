@@ -1,1 +1,9 @@
+drop view VIEW_Staff_Salary_Info_Query
 
+drop view VIEW_SalaryBill_Query
+
+drop view VIEW_ItemLesson_Query
+drop view VIEW_ItemLessonList_Normal_Query
+
+drop view VIEW_Order_Query
+drop view VIEW_ItemConsume_Query
